@@ -4,7 +4,7 @@ pipeline {
     stage('Checkout') {
       agent any
       steps {
-        git branch:'main', credentialsId:'Github_credentials', url: 'git@github.com:subhadeep18/PythonDemo.git'
+        git branch:'main', credentialsId:'Github_credentials', url: 'https://github.com/subhadeep18/PythonDemo.git'
       }
     }
     stage('Build') {
