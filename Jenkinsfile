@@ -1,6 +1,6 @@
 pipeline {
+  agent none
   stages {
-    agent any
     stage('Checkout') {
       steps {
         git branch:'main', credentialsId:'Github_credentials', url: 'git@github.com:subhadeep18/PythonDemo.git'
